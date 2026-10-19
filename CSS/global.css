@@ -17,17 +17,27 @@ body{display: flex;}
     
 }
 
-.nav{align-items: center;}
+.nav{align-items: center;
+}
 
-.nav__list{align-items: center;}
+.nav__list{align-items: center;
+    
+}
+
+.nav__list ul {
+    
+}
 
 .nav__link{
+    
     padding: 8px 35px;
     background-color: var(--color-primary);
-    border-radius:var(--radius-md) ;
+    border-radius:var(--radius-sm) ;
     justify-content: space-between;}
 
 .nav__link:hover{
+    background-color: var(--color-primary-hover);
+    transition: var(--transition);
 
 }
 
@@ -36,6 +46,7 @@ body{display: flex;}
 /* classe para todas as sections */
 .section-vet{
 margin-left:16%;
+display: flex;
 }
 .section-vet__title{
 
@@ -47,7 +58,9 @@ margin-left:16%;
 
 /* Seção de introdução */
 
-.section-vet__infos{}
+.section-vet__infos{
+    display: block;
+}
 
 .section-vet__img{}
 
@@ -70,23 +83,24 @@ margin-left:16%;
     height: var(--section-height);
     min-height: 500px; /*Altura minima de 500 px para conseguir abrir as perguntas*/
     display: flex;
-    flex-direction: column; /*Ser ve para deixar a oergunta em cima e as respostas em baixo*/
+    flex-direction: column; /*Ser ve para deixar a pergunta em cima e as respostas em baixo*/
     justify-content: center;
     align-items: center;
     padding: 0 5%;
-    scroll-margin-top: var(--header-height);
+    background-color: ;
+  
 }
 
-.faqs__title{font-size: var(--font-size-xl);
+.faqs__title{font-size: var(--font-size-lg);
     color: var(--color-text-title);
-    margin-bottom: 25px;}
+    margin-bottom: 10px;}
 
 .faqs__container{
     width: 100%;
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
     
 }
 
@@ -97,10 +111,12 @@ margin-left:16%;
     box-shadow: var(--shadow-card);
     transition: var(--transition);
 
-
+}
 .faqs__summary{}
 
-.faqs__text{}
+.faqs__text{
+    
+}
 
 /* Footer */
 
