@@ -9,89 +9,103 @@
 
 <body>
     <!-- Seção do nav -->
-    <aside class="">
-        <h2 class="">Modelo RGB</h2>
-        <nav class="">
-            <a href="#" class="">Cuidados Especializados</a>
-            <a href="#" class="">Nossas Especialidades</a>
-            <a href="#" class="">Corpo Clínico Responsável</a>
-            <a href="#" class="">Estrutura e Horários de Atendimento</a>
-            <a href="" class="">Faq</a>
+    <aside class="nav">
+        <h2 class="nav__text">Modelo RGB</h2>
+        <nav class="nav__list">
+            <a href="#home" class="nav__link">Ínicio</a>
+            <a href="#especialidades" class="nav__link">Especialidades</a>
+            <a href="#equipe" class="nav__link">Equipe Médica</a>
+            <a href="#insfraestrutura" class="">Infraestrutura</a>
+            <a href="#faq" class="nav__link">Dúvidas</a>
         </nav>
     </aside>
 
     <main>
-        <section>
-            <h1>Cuidados Especializados e Amor ao Seu Pet </h1>
+        <section id="home" class="section-introduction">
+            <h2>Cuidados Especializados e Amor ao Seu Pet </h2>
             <p>O Hospital Veterinário VetCare oferece estrutura hospitalar completa 24 horas por dia.
                 Nossa equipe é composta por especialistas dedicados ao diagnóstico preciso e tratamento
                 humanizado para cães, gatos e animais silvestres.</p>
-            <img src="https://placehold.co/600x400/059669/ffffff?text=VetCare+Hospital" alt="">
+            <article>
+                <img src="https://placehold.co/600x400/059669/ffffff?text=VetCare+Hospital" alt="">
+            </article>
         </section>
-        <section>
-            <h1>Nossas Especialidades</h1>
-            <div class="">
+        <section id="especialidades" class="section-especialidades">
+            <h2>Nossas Especialidades</h2>
+            <div class="section-especialidades__container">
                 <p>(Cardiologia Veterinária): Avaliação preventiva e exames ecocardiográficos avançados
                     para garantir a saúde cardíaca do seu animal. </p>
             </div>
-            <div class="">
+            <div class="section-especialidades__container">
+                <p>(Cardiologia Veterinária): Avaliação ">
                 <p>(Ortopedia e Traumatologia): Cirurgias complexas e tratamento de fraturas com
                     equipamentos de última geração. </p>
             </div>
-            <div class="">
+            <div class="section-especialidades__container">
+                <p>(Cardiologia Veterinária): Avaliação ">
                 <p> (Dermatologia Especializada): Diagnóstico preciso de alergias, infecções cutâneas e
                     tratamentos terapêuticos modernos</p>
             </div>
         </section>
-        <section>
-            <h1>Corpo Clínico Responsável </h1>
-            <div class="">
+        <section id="equipe" class="section-equipe">
+            <h2>Corpo Clínico Responsável </h2>
+            <div class="section-equipe__container">
                 <img src="" alt="">
                 <p>Dra. Camila Rocha - CRMV 12.450 - Especialista em Cirurgia Geral e Cuidados
                     Intensivos.</p>
             </div>
-            <div class="">
+            <div class="section-equipe__container">
                 <img src="" alt="">
                 <p>Dr. Henrique Silva - CRMV 15.890 - Especialista em Neurologia e Ortopedia
                     Animal.</p>
             </div>
-            <div class="">
+            <div class="section-equipe__container">
                 <img src="" alt="">
-                <p>Dra. Juliana Mendes  - CRMV 18.210  - Especialista em Medicina de Felines e 
-Cardiologia.</p>
+                <p>Dra. Juliana Mendes - CRMV 18.210 - Especialista em Medicina de Felines e
+                    Cardiologia.</p>
             </div>
         </section>
-        <section>
-            <h1>Estrutura e Horários de Atendimento</h1>
-            <p></p>
-            <span></span>
+        <section id="infraestrutura" class="section-infra">
+            <h2>Estrutura e Horários de Atendimento</h2>
+            <p>Contamos com centro cirúrgico equipado com anestesia inalatória, laboratório de análises
+                clínicas próprio e leitos de UTI individualizados com monitoramento contínuo.</p>
+            <span>Pronto Atendimento 24h para urgências e emergências.
+                Consultas ambulatoriais de Segunda a Sábado, das 08:00 às 20:00. </span>
         </section>
         <!-- Faq´s -->
-        <section id="" class="">
-            <h2 class=""></h2>
+        <section id="faq" class="faqs">
+            <h2 class=""> Perguntas Frequentes (FAQ) </h2>
             <div class="">
                 <details class="">
                     <summary class=""></summary>
                     <p class="t"></p>
                 </details>
                 <details class="">
-                    <summary class=""></summary>
-                    <p class="t"></p>
+                    <summary class="">A clínica atende emergências sem agendamento prévio? </summary>
+                    <p class="t">Sim. Nosso setor de Pronto Atendimento funciona 24 horas por dia, 7 dias por
+                        semana, por ordem de gravidade.</p>
                 </details>
                 <details class="">
-                    <summary class=""></summary>
-                    <p class="t"></p>
+                    <summary class="">Quais documentos preciso levar na primeira consulta do meu pet?</summary>
+                    <p class="t">Recomendamos trazer a carteira de vacinação, histórico de exames anteriores e lista
+                        de medicamentos em uso. </p>
                 </details>
                 <details class="">
-                    <summary class=""></summary>
-                    <p class="t"></p>
+                    <summary class="">É necessário jejum para a realização de exames de sangue?</summary>
+                    <p class="t">Para a maioria dos exames bioquímicos e de imagem, solicita-se jejum alimentar de
+                        8 a 12 horas. Água pode ser oferecida moderadamente.</p>
+                </details>
+                <details class="">
+                    <summary class=""> VetCare realiza atendimento de animais exóticos e silvestres? </summary>
+                    <p class="t">Sim, possuímos veterinários especializados no atendimento de aves, répteis e
+                        pequenos roedores com agendamento prévio. </p>
                 </details>
             </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="section-footer">
         <div class="">
             <p>VetCare Hospital Veterinário - Atendimento 24 Horas.</p>
         </div>
