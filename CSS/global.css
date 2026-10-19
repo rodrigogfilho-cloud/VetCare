@@ -46,7 +46,7 @@ body{display: flex;}
 /* classe para todas as sections */
 .section-vet{
 margin-left:16%;
-display: flex;
+
 }
 .section-vet__title{
 
@@ -54,6 +54,10 @@ display: flex;
 
 .section-vet p{
 
+}
+
+.section-vet-esp{
+    display: flex;
 }
 
 /* Seção de introdução */
@@ -70,7 +74,6 @@ display: flex;
 
 /* Seção equip */
 .section-equipe__peoples{
-    display: flex;
 }
 
 .section-equipe__card{}
