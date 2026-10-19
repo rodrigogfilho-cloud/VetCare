@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Cores</title>
+    <link rel="stylesheet" href="./CSS/global.css">
+</head>
+<body>
+
+    <!-- OBS : Se for dividir a tela exatamente 1920px por 7 partes, vai dar 274 -->
+
+    <!-- SEÇÃO 1 : MODELO RGB -->
+     <section id="rgb" class="color-section">
+        
+        <!-- DIVISÃO 1 DE 7: MENU LATERAL -->                       
+         <aside class="color-section__sidebar">
+            <h2 class="color-section__title">Modelo RGB</h2>
+            <nav class="color-section__menu">
+                <a href="#rgb" class="color-section__link color-section__link--active">RGB</a>
+                <a href="#cmyk" class="color-section__link">CMYK</a>
+                <a href="#netflix" class="color-section__link">NETFLIX</a>
+                <a href="#google" class="color-section__link">GOOGLE</a>
+            </nav>
+         </aside>
+     
+
+     <!-- DIVISÕES -->
+
+     <div class="color-section__content">
+
+         <section class="color-section__palette" aria-label="Visualização da paleta RGB">
+             <div class="color-section__bar color-section__bar--rgb-1"><p>RGB (255, 0, 0)</p></div>
+             <div class="color-section__bar color-section__bar--rgb-2"><p>RGB (0, 255, 0)</p></div>
+             <div class="color-section__bar color-section__bar--rgb-3"><p>RGB (0, 0, 255)</p></div>
+             <div class="color-section__bar color-section__bar--rgb-4"><p>RGB (255, 255, 0)</p></div>
+             <div class="color-section__bar color-section__bar--rgb-5"><p>RGB (0, 255, 255)</p></div>
+             <div class="color-section__bar color-section__bar--rgb-6"><p>RGB (255, 0, 255)</p></div>
+         </section>
+
+         <section class="color-section__faq" aria-labelledby="faq-rgb-title">
+
+            <h3 id="faq-rgb-title" class="color-section__faq-title">Perguntas frequentes sobre RGB</h3>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">O que é e onde usar o RGB?</summary>
+                <p class="color-section__faq-answer">É o modelo de cor aditivo (baseado em luz) usado exclusivamente em telas e mídias digitais, como monitores, celulares e TVs.</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Posso usar RGB para impressão?</summary>
+                <p class="color-section__faq-answer">Não. As impressoras não conseguem reproduzir a luz do RGB. Arquivos em RGB impressos ficam com cores apagadas e distorcidas.</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">O que significam os números do RGB?</summary>
+                <p class="color-section__faq-answer">Representam a intensidade de Vermelho, Verde e Azul de 0 a 255. Por exemplo, (255, 0, 0) é o vermelho puro e (0, 0, 0) é preto.</p>
+            </details>
+
+         </section>
+
+     </div>
+
+    </section>
+
+     <!-- SEÇÃO 2 : MODELO CMYK -->
+     <section id="cmyk" class="color-section">
+
+        <!-- DIVISÃO 1 DE 7: MENU LATERAL -->  
+                     
+         <aside class="color-section__sidebar">
+            <h2 class="color-section__title">Modelo CMYK</h2>
+            <nav class="color-section__menu">
+                <a href="#rgb" class="color-section__link">RGB</a>
+                <a href="#cmyk" class="color-section__link color-section__link--active">CMYK</a>
+                <a href="#netflix" class="color-section__link">NETFLIX</a>
+                <a href="#google" class="color-section__link">GOOGLE</a>
+            </nav>
+         </aside>
+
+     
+
+     <!-- DIVISÕES CMYK-->
+
+     <div class="color-section__content">
+         <section class="color-section__palette" aria-label="Visualização da paleta CMYK">
+             <div class="color-section__bar color-section__bar--cmyk-1"><p>#e60000</p></div>
+             <div class="color-section__bar color-section__bar--cmyk-2"><p>#006b00</p></div>
+             <div class="color-section__bar color-section__bar--cmyk-3"><p>#0000ae</p></div>
+             <div class="color-section__bar color-section__bar--cmyk-4"><p>#dfdf05</p></div>
+             <div class="color-section__bar color-section__bar--cmyk-5"><p>#03e6e6</p></div>
+             <div class="color-section__bar color-section__bar--cmyk-6"><p>#d900d9</p></div>
+         </section>
+
+         <section class="color-section__faq" aria-labelledby="faq-cmyk-title">
+            <h3 id="faq-cmyk-title" class="color-section__faq-title">Perguntas frequentes sobre CMYK</h3>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">O que é o sistema CMYK?</summary>
+                <p class="color-section__faq-answer">É o modelo subtrativo (Ciano, Magenta, Amarelo e Preto) usado por impressoras para aplicar tinta física no papel.</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Por que o preto é representado pela letra K?</summary>
+                <p class="color-section__faq-answer">Vem de Key (Chave), pois a placa preta guiava o alinhamento e dava o contraste final nas impressões tradicionais.</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Como evitar erros ao imprimir em CMYK?</summary>
+                <p class="color-section__faq-answer">Crie o arquivo direto em modo CMYK no software de design e faça uma prova de impressão antes de rodar o material final.</p>
+            </details>
+            
+         </section>
+     </div>
+
+    </section>
+
+    <!-- SEÇÃO 3 : MODELO NETFLIX -->
+     <section id="netflix" class="color-section">
+        
+        <!-- DIVISÃO 1 DE 4: MENU LATERAL -->                       
+         <aside class="color-section__sidebar">
+            <h2 class="color-section__title">Modelo NETFLIX</h2>
+            <nav class="color-section__menu">
+                <a href="#rgb" class="color-section__link ">RGB</a>
+                <a href="#cmyk" class="color-section__link">CMYK</a>
+                <a href="#netflix" class="color-section__link color-section__link--active">NETFLIX</a>
+                <a href="#google" class="color-section__link">GOOGLE</a>
+            </nav>
+         </aside>
+    
+
+     <!-- DIVISÕES NETFLIX-->
+
+     <div class="color-section__content">
+         <section class="color-section__palette" aria-label="Visualização da paleta NETFLIX">
+             <div class="color-section__bar color-section__bar--netflix-1"><p class = "identificacao">#221F1F</p></div>
+             <div class="color-section__bar color-section__bar--netflix-2"><p>#E50914</p></div>
+             <div class="color-section__bar color-section__bar--netflix-3"><p>#F5F5F1</p></div>
+         </section>
+
+         <section class="color-section__faq" aria-labelledby="faq-netflix-title">
+            <h3 id="faq-netflix-title" class="color-section__faq-title">Perguntas frequentes sobre a paleta de cores da NETFLIX</h3>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Quais são as cores oficiais da Netflix?</summary>
+                <p class="color-section__faq-answer">A paleta principal é o Netflix Red (Vermelho), combinado com Preto e cinzas escuros de fundo.</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Por que a Netflix usa vermelho e preto?</summary>
+                <p class="color-section__faq-answer">O preto remete ao escurinho do cinema para evitar o cansaço visual, e o vermelho evoca as cortinas clássicas das salas de cinema.</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Qual é o código HEX do vermelho da Netflix?</summary>
+                <p class="color-section__faq-answer">O tom oficial é o #E50914 (Netflix Red). Os fundos variam entre #000000 (Preto) e #141414 (Cinza muito escuro).</p>
+            </details>
+            
+         </section>
+         
+     </div>
+
+    </section>
+
+
+     <!-- SEÇÃO 4 : MODELO GOOGLE -->
+     <section id="google" class="color-section">
+
+        <!-- DIVISÃO 1 DE 5 : MENU LATERAL -->  
+                     
+         <aside class="color-section__sidebar">
+            <h2 class="color-section__title">Modelo GOOGLE</h2>
+            <nav class="color-section__menu">
+                <a href="#rgb" class="color-section__link">RGB</a>
+                <a href="#cmyk" class="color-section__link">CMYK</a>
+                <a href="#netflix" class="color-section__link">NETFLIX</a>
+                <a href="#google" class="color-section__link color-section__link--active">GOOGLE</a>
+            </nav>
+         </aside>
+
+    
+
+     <!-- DIVISÕES GOOGLE-->
+
+     <div class="color-section__content">
+         <section class="color-section__palette" aria-label="Visualização da paleta NETFLIX">
+             <div class="color-section__bar color-section__bar--google-1"><p>#4285F4</p></div>
+             <div class="color-section__bar color-section__bar--google-2"><p>#FBBC05</p></div>
+             <div class="color-section__bar color-section__bar--google-3"><p>#34A853</p></div>
+             <div class="color-section__bar color-section__bar--google-4"><p>#EA4335</p></div>
+         </section>
+
+         <section class="color-section__faq" aria-labelledby="faq-google-title">
+            <h3 id="faq-google-title" class="color-section__faq-title">Perguntas frequentes sobre paleta de cores da GOOGLE</h3>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Quais são as cores do Google?</summary>
+                <p class="color-section__faq-answer">São quatro cores: Azul, Vermelho, Amarelo e Verde.</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Por que a marca escolheu essas cores?</summary>
+                <p class="color-section__faq-answer">Foi inspirada nos blocos de LEGO usados no primeiro servidor. O verde na letra "L" quebra a sequência de cores primárias para indicar que a empresa é inovadora.</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Quais são os códigos HEX das cores do Google?</summary>
+                <p class="color-section__faq-answer">Azul (#4285F4), Vermelho (#EA4335), Amarelo (#FBBC05) e Verde (#34A853).</p>
+            </details>
+            
+         </section>
+     </div>
+
+    </section>
+    
+</body>
+</html>

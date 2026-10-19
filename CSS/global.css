@@ -2,21 +2,70 @@
 @import url(responsive.css);
 @import url(variable.css);
 
-.nav{
+/* SEÇÕES DO NAVEGADOR */
+body{display: flex;}
 
-    width: 18vw;
+.section-menu{
+    position: fixed;
     height: 100%;
+    width: 18%;
     background-color: var(--color-sidebar-bg);
     color: var(--color-sidebar-text);
+    z-index: 1000;
+    
+    
+}
+
+.nav{align-items: center;}
+
+.nav__list{align-items: center;}
+
+.nav__link{padding: 8px 35px;
+background-color: var(--);}
+
+.nav__link:hover{
 
 }
 
-.nav__link{
-    display: flex;
-    gap: 10px; /* Distância dos itens da lista*/
-    background-color: var(--color-primary);
-    padding: 8px;
-    border-radius: var(--radius-md);
-    width: 50%;
-    text-align: center;
-}
+/* SECTIONS */
+
+/* classe para todas as sections */
+.section-vet{}
+.section-vet__title{}
+.section-vet p{}
+
+/* Seção de introdução */
+
+.section-vet__infos{}
+
+.section-vet__img{}
+
+/* Seção especialidades */
+
+.section-especialidades__container{}
+
+/* Seção equip */
+
+.section-equipe__container{}
+
+.section-equipe__container img{}
+
+/* FAQ´s */
+
+.faqs{}
+
+.faqs__title{}
+
+.faqs__container{}
+
+.faqs__item{}
+
+.faqs__summary{}
+
+.faqs__text{}
+
+/* Footer */
+
+.section-footer{}
+
+.section-footer__text{}
