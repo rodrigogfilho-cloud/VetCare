@@ -1,0 +1,22 @@
+@import url(reset.css);
+@import url(responsive.css);
+@import url(variable.css);
+
+.nav{
+
+    width: 18vw;
+    height: 100%;
+    background-color: var(--color-sidebar-bg);
+    color: var(--color-sidebar-text);
+
+}
+
+.nav__link{
+    display: flex;
+    gap: 10px; /* Distância dos itens da lista*/
+    background-color: var(--color-primary);
+    padding: 8px;
+    border-radius: var(--radius-md);
+    width: 50%;
+    text-align: center;
+}
