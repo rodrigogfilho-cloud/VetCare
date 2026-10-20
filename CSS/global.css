@@ -126,7 +126,7 @@ body {
 }
 
 .section-especialidades__card {
-    width: 31.3%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     gap: 16px;
