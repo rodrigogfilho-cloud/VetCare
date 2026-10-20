@@ -5,124 +5,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VetCare | Clínica Veterinária</title>
+    <!-- Ordem importa: variáveis > reset > global > responsivo -->
     <link rel="stylesheet" href="./CSS/global.css">
 </head>
 
 <body>
-    <!-- Seção do nav -->
+    <!-- nav -->
     <header class="section-menu">
-        <aside class="nav">
-            <nav class="nav__list">
-                <ul>
-                    <li><a href="#home" class="nav__link">Ínicio</a></li>
-                    <li><a href="#especialidades" class="nav__link">Especialidades</a></li>
-                    <li><a href="#equipe" class="nav__link">Equipe Médica</a></li>
-                    <li><a href="#infraestrutura" class="nav__link">Infraestrutura</a></li>
-                    <li><a href="#faq" class="nav__link">Dúvidas</a></li>
-                </ul>
-            </nav>
-        </aside>
+        <p class="nav__brand">VetCare Hospital</p>
+        <nav class="nav__list" >
+            <ul>
+                <li><a href="#home" class="nav__link">Início</a></li>
+                <li><a href="#especialidades" class="nav__link">Especialidades</a></li>
+                <li><a href="#equipe" class="nav__link">Equipe Médica</a></li>
+                <li><a href="#infraestrutura" class="nav__link">Infraestrutura</a></li>
+                <li><a href="#faq" class="nav__link">Dúvidas</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="home" class="section-vet">
+        <!-- Seção inicial -->
+        <section id="home" class="section-vet section-vet--inicio">
             <div class="section-vet__infos">
-                <h2 class="section-vet__title">Cuidados Especializados e Amor ao Seu Pet </h2>
-                <p>O Hospital Veterinário VetCare oferece estrutura hospitalar completa 24 horas por dia.
+                <h1 class="section-vet__title">Cuidados Especializados e Amor ao Seu Pet</h1>
+                <p class="section-vet__text">O Hospital Veterinário VetCare oferece estrutura hospitalar completa 24 horas por dia.
                     Nossa equipe é composta por especialistas dedicados ao diagnóstico preciso e tratamento
                     humanizado para cães, gatos e animais silvestres.</p>
             </div>
+            <article class="section-vet__img">
+                <img class="section-vet__foto" src="https://placehold.co/600x400/059669/ffffff?text=VetCare+Hospital"
+                    alt="Fachada do Hospital Veterinário VetCare">
+            </article>
+        </section>
 
-            <aside class="section-vet__img">
-                <article>
-                    <img src="https://placehold.co/600x400/059669/ffffff?text=VetCare+Hospital" alt="">
-                </article>
-            </aside>
-        </section>
-        <section id="especialidades" class="section-vet-esp">
+        <!-- Seção 2: Especialidades -->
+        <section id="especialidades" class="section-vet">
             <h2 class="section-vet__title">Nossas Especialidades</h2>
-            <div class="section-especialidades__container">
-                <p>(Cardiologia Veterinária): Avaliação preventiva e exames ecocardiográficos avançados
-                    para garantir a saúde cardíaca do seu animal. </p>
-            </div>
-            <div class="section-especialidades__container">
-                <p>(Ortopedia e Traumatologia): Cirurgias complexas e tratamento de fraturas com
-                    equipamentos de última geração. </p>
-            </div>
-            <div class="section-especialidades__container">
-               
-                <p> (Dermatologia Especializada): Diagnóstico preciso de alergias, infecções cutâneas e
-                    tratamentos terapêuticos modernos</p>
+            <div class="section-especialidades__list">
+                <article class="section-especialidades__card">
+                    <h3 class="section-especialidades__title">Cardiologia Veterinária</h3>
+                    <p class="section-especialidades__text">Avaliação preventiva e exames ecocardiográficos avançados
+                        para garantir a saúde cardíaca do seu animal.</p>
+                </article>
+                <article class="section-especialidades__card">
+                    <h3 class="section-especialidades__title">Ortopedia e Traumatologia</h3>
+                    <p class="section-especialidades__text">Cirurgias complexas e tratamento de fraturas com
+                        equipamentos de última geração.</p>
+                </article>
+                <article class="section-especialidades__card">
+                    <h3 class="section-especialidades__title">Dermatologia Especializada</h3>
+                    <p class="section-especialidades__text">Diagnóstico preciso de alergias, infecções cutâneas e
+                        tratamentos terapêuticos modernos.</p>
+                </article>
             </div>
         </section>
+
+        <!-- Seção equipe -->
         <section id="equipe" class="section-vet">
-            <h2 class="section-vet__title">Corpo Clínico Responsável </h2>
-            <div class="section-equipe__peoples">
-                <div class="section-equipe__card">
-                    <img src="https://media.istockphoto.com/id/2252662145/pt/foto/veterinary-team-examines-a-dog-in-a-clinic-during-a-routine-check-up-in-the-afternoon.webp?a=1&b=1&s=612x612&w=0&k=20&c=xtgYixwm-sV6hoQx0NLEqX7JsOj_ud8UiIFG-D6WqRU=" alt="Doutora veterinária cuidando de um cachorro">
-                    <p>Dra. Camila Rocha - CRMV 12.450 - Especialista em Cirurgia Geral e Cuidados
-                        Intensivos.</p>
-                </div>
-                <div class="section-equipe__card">
-                    <img src="https://plus.unsplash.com/premium_photo-1786925788261-32168c15a64e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Doutor veterinário cuidando de um cachorro">
-                    <p>Dr. Henrique Silva - CRMV 15.890 - Especialista em Neurologia e Ortopedia
-                        Animal.</p>
-                </div>
-                <div class="section-equipe__card">
-                    <img src="https://media.istockphoto.com/id/2222963156/pt/foto/veterinarian-examining-a-cat-with-stethoscope-in-clinic.webp?a=1&b=1&s=612x612&w=0&k=20&c=eVRXNjA6NoTGJ7kN2NopUjjyfoWl0qXFXbCpHmNCutw=" alt="Doutora veterinária cuidando de um gato">
-                    <p>Dra. Juliana Mendes - CRMV 18.210 - Especialista em Medicina de Felines e
-                        Cardiologia.</p>
-                </div>
+            <h2 class="section-vet__title">Corpo Clínico Responsável</h2>
+            <div class="section-equipe__list">
+                <article class="section-equipe__card">
+                    <img class="section-equipe__img"
+                        src="https://media.istockphoto.com/id/2252662145/pt/foto/veterinary-team-examines-a-dog-in-a-clinic-during-a-routine-check-up-in-the-afternoon.webp?a=1&b=1&s=612x612&w=0&k=20&c=xtgYixwm-sV6hoQx0NLEqX7JsOj_ud8UiIFG-D6WqRU="
+                        alt="Doutora veterinária cuidando de um cachorro">
+                    <div class="section-equipe__info">
+                        <h3 class="section-equipe__name">Dra. Camila Rocha</h3>
+                        <span class="section-equipe__crmv">CRMV 12.450</span>
+                        <p class="section-equipe__text">Especialista em Cirurgia Geral e Cuidados Intensivos.</p>
+                    </div>
+                </article>
+                <article class="section-equipe__card">
+                    <img class="section-equipe__img"
+                        src="https://plus.unsplash.com/premium_photo-1786925788261-32168c15a64e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                        alt="Doutor veterinário cuidando de um cachorro">
+                    <div class="section-equipe__info">
+                        <h3 class="section-equipe__name">Dr. Henrique Silva</h3>
+                        <span class="section-equipe__crmv">CRMV 15.890</span>
+                        <p class="section-equipe__text">Especialista em Neurologia e Ortopedia Animal.</p>
+                    </div>
+                </article>
+                <article class="section-equipe__card">
+                    <img class="section-equipe__img"
+                        src="https://media.istockphoto.com/id/2222963156/pt/foto/veterinarian-examining-a-cat-with-stethoscope-in-clinic.webp?a=1&b=1&s=612x612&w=0&k=20&c=eVRXNjA6NoTGJ7kN2NopUjjyfoWl0qXFXbCpHmNCutw="
+                        alt="Doutora veterinária cuidando de um gato">
+                    <div class="section-equipe__info">
+                        <h3 class="section-equipe__name">Dra. Juliana Mendes</h3>
+                        <span class="section-equipe__crmv">CRMV 18.210</span>
+                        <p class="section-equipe__text">Especialista em Medicina de Felines e Cardiologia.</p>
+                    </div>
+                </article>
             </div>
         </section>
+
+        <!-- Seção 4: Infraestrutura e Atendimento -->
         <section id="infraestrutura" class="section-vet">
             <h2 class="section-vet__title">Estrutura e Horários de Atendimento</h2>
-            <p>Contamos com centro cirúrgico equipado com anestesia inalatória, laboratório de análises
-                clínicas próprio e leitos de UTI individualizados com monitoramento contínuo.</p>
-            <span>Pronto Atendimento 24h para urgências e emergências.
-                Consultas ambulatoriais de Segunda a Sábado, das 08:00 às 20:00. </span>
+            <p class="section-vet__text">Contamos com centro cirúrgico equipado com anestesia inalatória, laboratório de
+                análises clínicas próprio e leitos de UTI individualizados com monitoramento contínuo.</p>
+            <div class="section-infra__schedule">
+                <p class="section-infra__highlight">Pronto Atendimento 24h para urgências e emergências.</p>
+                <p class="section-vet__text">Consultas ambulatoriais de Segunda a Sábado, das 08:00 às 20:00.</p>
+            </div>
         </section>
-        <!-- Faq´s -->
+
+        <!-- Seção 5: FAQ -->
         <section id="faq" class="faqs">
-            <h2 class="faqs__title"> Perguntas Frequentes (FAQ) </h2>
+            <h2 class="faqs__title">Perguntas Frequentes (FAQ)</h2>
             <div class="faqs__container">
                 <details class="faqs__item">
-                    <summary class="faqs__summary">A clínica atende emergências sem agendamento prévio? </summary>
+                    <summary class="faqs__summary">A clínica atende emergências sem agendamento prévio?</summary>
                     <p class="faqs__text">Sim. Nosso setor de Pronto Atendimento funciona 24 horas por dia, 7 dias por
                         semana, por ordem de gravidade.</p>
                 </details>
                 <details class="faqs__item">
                     <summary class="faqs__summary">Quais documentos preciso levar na primeira consulta do meu pet?</summary>
-                    <p class="faqs__text">Recomendamos trazer a carteira de vacinação, histórico de exames anteriores e lista
-                        de medicamentos em uso. </p>
+                    <p class="faqs__text">Recomendamos trazer a carteira de vacinação, histórico de exames anteriores e
+                        lista de medicamentos em uso.</p>
                 </details>
                 <details class="faqs__item">
                     <summary class="faqs__summary">É necessário jejum para a realização de exames de sangue?</summary>
-                    <p class="faqs__text">Para a maioria dos exames bioquímicos e de imagem, solicita-se jejum alimentar de
-                        8 a 12 horas. Água pode ser oferecida moderadamente.</p>
+                    <p class="faqs__text">Para a maioria dos exames bioquímicos e de imagem, solicita-se jejum alimentar
+                        de 8 a 12 horas. Água pode ser oferecida moderadamente.</p>
                 </details>
                 <details class="faqs__item">
-                    <summary class="faqs__summary"> VetCare realiza atendimento de animais exóticos e silvestres? </summary>
+                    <summary class="faqs__summary">A VetCare realiza atendimento de animais exóticos e silvestres?</summary>
                     <p class="faqs__text">Sim, possuímos veterinários especializados no atendimento de aves, répteis e
-                        pequenos roedores com agendamento prévio. </p>
+                        pequenos roedores com agendamento prévio.</p>
                 </details>
             </div>
         </section>
-
     </main>
+
+   
+    
+    <a class="whatsapp" href="https://wa.me/551633033800?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20VetCare."
+        target="_blank" rel="noopener noreferrer" aria-label="Falar com a VetCare pelo WhatsApp">
+        Fale pelo WhatsApp
+    </a>
 
     <footer class="section-footer">
         <div class="section-footer__text">
             <p>VetCare Hospital Veterinário - Atendimento 24 Horas.</p>
         </div>
         <div class="section-footer__text">
-            <p>&copy; 2026 VetCare. Todos os direitos reservados. </p>
+            <p>&copy; 2026 VetCare. Todos os direitos reservados.</p>
         </div>
-
     </footer>
-
-
-
 </body>
 
 </html>
