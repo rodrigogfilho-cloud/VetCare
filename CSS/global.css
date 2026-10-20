@@ -133,7 +133,6 @@ body {
     padding: 48px 34px;
     background-color: var(--color-bg-card);
     border: 1px solid var(--color-border);
-    border-top: 0.6rem solid var(--color-primary);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-card);
 }
@@ -159,7 +158,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 3%;
-    row-gap: 2.4rem;
+
 }
 
 .section-equipe__card {
@@ -172,6 +171,8 @@ body {
     box-shadow: var(--shadow-card);
     overflow: hidden;
     transition: var(--transition);
+    align-items: center;
+    justify-content: center;
 }
 
 .section-equipe__card:hover {
@@ -179,8 +180,10 @@ body {
 }
 
 .section-equipe__img {
-    width: 100%;
-    height: 100%;
+    margin-top: 15px;
+    border-radius: var(--radius-md);
+    width: 80%;
+    height: 80%;
     
 }
 
