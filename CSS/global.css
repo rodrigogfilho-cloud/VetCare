@@ -320,10 +320,6 @@ body {
     transition: var(--transition);
 }
 
-.botao:hover {
-    transform: translateY(-0.4rem) scale(1.05);
-    box-shadow: var(--shadow-hover);
-}
 
 
 
