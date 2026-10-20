@@ -318,8 +318,8 @@ body {
 /* ---------- botão de contato ---------- */
 .botao {
     position: fixed;
-    right: 2rem;
-    bottom: 10vh;
+    right: 10px;
+    bottom: 80px;
     z-index: 1100;
     padding: 1.2rem 2.4rem;
     font-size: var(--font-size-base);
