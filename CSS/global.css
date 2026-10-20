@@ -162,7 +162,7 @@ body {
 }
 
 .section-equipe__card {
-    width: 31.3%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     background-color: var(--color-bg-card);
