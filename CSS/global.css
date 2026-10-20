@@ -109,7 +109,15 @@ body {
 
 .section-vet__img {
     width: 45%;
+    box-shadow: (--shadow-card);
 }
+
+.section-vet__img>:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-0.3rem);
+    transition: var(--transition);
+}
+
 
 .section-vet__foto {
     width: 100%;
@@ -287,7 +295,7 @@ body {
     color: var(--color-text-muted);
 }
 
-/* ---------- RODAPÉ FIXO (RF05) ---------- */
+/* ---------- rodapé ---------- */
 .section-footer {
     position: fixed;
     bottom: 0;
@@ -307,7 +315,7 @@ body {
     color: var(--color-sidebar-text);
 }
 
-/* ---------- BOTÃO FLUTUANTE DO WHATSAPP (RF06) ---------- */
+/* ---------- botão de contato ---------- */
 .botao {
     position: fixed;
     right: 2rem;
