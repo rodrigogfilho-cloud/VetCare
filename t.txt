@@ -1,0 +1,226 @@
+1° Estudar com Free code camp
+
+2° Estudar tags de Html e CSS (Fazer definição e funcionamento de cada tag)
+
+RF = 'Requisitos Funcionais'
+RNF = 'Requisitos não Funcionais'
+
+article = explica o que é o conteudo
+
+aside = é um elemento(por exemplo: imagem) relacionado ao article
+
+calc --> função de calculo do CSS
+
+pesquisar tags html
+
+
+
+TAMANHO DE TELAS:
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+-------------------------------------------------------------------
+
+===============================================================================         
+                                GUIA DE CONSULTA
+===============================================================================
+
+
+
+-------------------------------------------------------------------------------
+
+1. TAGS HTML 
+
+-------------------------------------------------------------------------------
+
+
+--- ESTRUTURA PRINCIPAL DO CORPO ---
+
+* <body> : Todo o conteúdo visível da página fica dentro desta tag.
+
+* <header> : Cabeçalho da página (normalmente contém logo e navegação).
+
+* <main> : Representa o conteúdo principal e exclusivo do documento.
+
+* <footer> : Rodapé do site (direitos autorais, dados de contato, etc.).
+
+
+
+--- ESTRUTURAÇÃO DE CONTEÚDO E SEÇÕES ---
+
+* <section> : Agrupa um bloco temático de conteúdo na página.
+
+* <article> : Representa um conteúdo autônomo (artigo, cartão ou bloco independente).
+
+* <aside> : Conteúdo secundário/lateral relacionado ao bloco principal.
+
+* <div> : Bloco genérico usado para agrupar e organizar elementos via CSS.
+
+
+
+--- NAVEGAÇÃO E LISTAS ---
+
+* <nav> : Bloco destinado a links de navegação do site.
+
+* <ul> : Lista não ordenada (por marcadores/pontos).
+
+* <li> : Item individual dentro de uma lista (<ul> ou <ol>).
+
+* <a href="..."> : Âncora/Link.
+
+    - href="#id": Rola até a seção com esse ID na página.
+
+    - href="mailto:email": Abre o programa de e-mail padrão.
+
+
+
+--- TEXTOS E TÍTULOS ---
+
+* <h1> : Título principal da página (use apenas um por página).
+
+* <h2> : Subtítulo de seção.
+
+* <p> : Parágrafo de texto.
+
+* <strong> : Destaca o texto em negrito (indica relevância/importância).
+
+* <mark> : Destaca o texto com um efeito de "marca-texto".
+
+* <address> : Bloco específico para informações de contato do autor/empresa.
+
+
+
+--- MÍDIA E ELEMENTOS INTERATIVOS ---
+
+* <img src="..." alt="..."> : Exibe uma imagem.
+
+    - src: Caminho ou URL da imagem.
+
+    - alt: Texto alternativo (acessibilidade e quando a imagem não carrega).
+
+* <details> : Cria um sanfonado (accordion) nativo que pode expandir/colapsar.
+
+* <summary> : O cabeçalho clicável de um elemento <details>.
+
+
+
+===============================================================================
+
+                        PROPRIEDADES E CONCEITOS CSS
+
+===============================================================================
+
+
+
+--- IMPORTAÇÕES E BEM METHODOLOGY ---
+
+* @import url(...) : Importa outros arquivos CSS externos (como variáveis e reset).
+
+* Nomenclatura BEM (.bloco__elemento--modificador): Convenção de classes para organização (ex: .nav__link).
+
+
+
+--- POSICIONAMENTO E LAYOUT (FLEXBOX) ---
+
+* display: flex; : Ativa o modelo Flexbox para alinhar elementos filhos lado a lado ou em coluna.
+
+* flex-direction: row-reverse | column : 
+
+    - row-reverse: Inverte a ordem horizontal dos elementos.
+
+    - column: Organiza os elementos verticalmente (em coluna).
+
+* align-items: center; : Alinha os itens flexíveis ao centro no eixo transversal (vertical por padrão).
+
+* justify-content: space-between | center; : 
+
+    - space-between: Empurra os itens para as pontas opostas.
+
+    - center: Centraliza os itens no eixo principal.
+
+* flex: 1; : Faz o elemento crescer para ocupar todo o espaço disponível restante.
+
+* gap: 8px; : Espaçamento automático entre elementos filhos de um flexbox/grid.
+
+* position: fixed; : Fixa o elemento na tela referente à janela (não rola com a página).
+
+* position: relative; : Mantém o elemento no fluxo normal, permitindo ajustes e ancoragem para filhos.
+
+* top, bottom, left: 0; : Posiciona um elemento fixo/absoluto no topo, base ou lateral da tela.
+
+* z-index: 1000; : Define a ordem de sobreposição (camadas). Valores maiores ficam por cima.
+
+
+
+--- DIMENSÕES E ESPAÇAMENTOS ---
+
+* width / height : Largura e altura do elemento.
+
+* min-height / max-width : Altura mínima ou largura máxima que o elemento pode atingir.
+
+* padding : Espaçamento interno do elemento (entre a borda e o conteúdo).
+
+* margin / margin-bottom / margin-top / margin-left : Margem externa ao redor do elemento.
+
+* scroll-margin-top : Cria uma margem no topo ao rolar a página via link âncora (evita que o header fixo cubra o título).
+
+
+
+--- TIPOGRAFIA E CORES ---
+
+* font-size : Tamanho da fonte.
+
+* font-weight: 600 | 700; : Espessura da fonte (negrito).
+
+* color : Cor do texto.
+
+* background-color : Cor de fundo do elemento.
+
+* var(--nome-da-variavel) : Utiliza o valor de uma variável declarada no CSS.
+
+
+
+--- BORDAS, SOMBRAS E EFEITOS VISUAIS ---
+
+* border / border-bottom / border-top : Define espessura, estilo e cor da borda.
+
+* border-radius : Arredonda os cantos das bordas.
+
+* box-shadow : Adiciona sombra projetada ao elemento.
+
+* backdrop-filter: blur(12px); : Aplica efeito de desfoque no fundo do elemento (vidro fosco).
+
+* object-fit: cover; : Faz uma imagem preencher o container mantendo sua proporção, sem achatar.
+
+* cursor: pointer; : Altera o cursor do mouse para a "mãozinha" indicando que é clicável.
+
+
+
+--- ANIMAÇÕES E INTERAÇÃO ---
+
+* transition: color 0.4s ease; : Suaviza mudanças de propriedades ao passar o mouse ou focar.
+
+* transform: translateY(-2px); : Move o elemento ligeiramente para cima/baixo (efeito hover).
+
+
+
+--- PSEUDO-CLASSES E ATRIBUTOS ---
+
+* :hover : Aplica estilos quando o mouse passa por cima do elemento.
+
+* :focus : Aplica estilos quando o elemento é selecionado via teclado (Tab) ou clique.
+
+* .faq__item[open] : Estiliza a tag <details> especificamente quando ela estiver aberta.
